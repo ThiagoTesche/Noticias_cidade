@@ -1,0 +1,507 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width:100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Menu */ 
+
+.menu-total{
+    width: 100%;
+    height: 100%;
+}
+
+.menu-total .menu{
+    background-image: url(imagens/fundo.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 300px;
+}
+
+.menu-total .menu .logo{
+    background-image: url(imagens/logo.png);
+    width: 152px;
+    height: 66px;
+    cursor: pointer;
+    float: left;
+    margin-top: 25px;
+    margin-left: 22.5%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu-total .menu ul.navegacao{
+    background-color: #b10333;
+    margin-top: 30px;
+    float: left;
+}
+
+.menu ul{
+    margin-left: 22.5%;
+}
+
+.menu ul li{
+    float: left;
+}
+
+.menu ul li a {
+    font-size: 0.9em;
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: #fff;
+    background: url(imagens/divisor.png) no-repeat left center;
+}
+
+.menu ul li.atual{
+    background-color: #de003e;
+}
+
+.menu ul li.atual a {
+    background: none;
+}
+
+.menu ul li a:hover{
+    color: rgb(130, 130, 231);
+}
+
+.menu-total .menu .mapa-logo{
+    background-image: url(imagens/detalhe-topo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    float: left;
+    left: 70%;
+    margin-top: -90px;
+}
+
+/* mobile */
+
+.menu-mobile {
+    margin-top:px;
+	float: right;
+	width: 38px;
+	height: 38px;
+	background-size: 100% 100%;
+	cursor: pointer;
+	background-image: url(imagens/icon_menu.png);
+	display: none;
+}
+
+.menu-mobile ul{
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 95px;
+	z-index: 999;
+	position: absolute;
+	text-align: center;
+	background-color: #B10333;
+}
+
+.menu-mobile li{
+	font-size: 23px;
+	padding: 20px 0px;
+	font-style: italic;
+}
+
+.menu-mobile li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+/******/
+
+/* Conteudo */
+
+.container{
+    width: 100%;
+    max-width: 950px;
+    margin: -40px auto;
+}
+
+.conteudo-total{
+    width: 100%;
+    display: flex;
+}
+
+/* colunas */
+
+.lateral {
+    width: 24%;
+    order: 1;
+    padding: 0px 20px;
+}
+
+.coluna-dir{
+    width: 38%;
+    order: 3;
+    padding: 0 20px;
+}
+
+.coluna-meio{
+    width: 38%;
+    order:2;
+    margin: 0px 20px ;
+    background: url(imagens/fundo-caixa.png);   
+}
+
+/****/
+
+/* coluna meio */
+
+.coluna-meio .caixa-destaque{
+    width: 100%;
+}
+
+.caixa-destaque h2, .caixa-mundo h2,.caixa-entrevista h2, .caixa-lateral h2, .news h2 {
+    background-color: #294c71 ;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+.caixa-destaque .destaque-conteudo{
+    background-color: #fff;
+    width: 96%;
+    margin: 10px auto;
+}
+
+.caixa-destaque .destaque-conteudo h3{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1em;
+    padding: 3px;
+    display: inline;
+    background-color: #B10333;
+}
+
+.caixa-destaque .img{
+    background-image: url(imagens/taxi.jpg);
+    width: 100%;
+    padding-top: 70%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+}
+
+.caixa-destaque p, .caixa-destaque a{
+    padding-left: 10px;
+}
+
+
+.caixa-mundo .mundo-conteudo{
+    width: 100%;
+    background-color: #fff;
+    width: 96%;
+    margin: 8px auto;
+    
+}
+
+
+.mundo-conteudo li .container{
+    display: flex;
+    margin-top: 8px;
+}
+
+.caixa-mundo .mundo-conteudo .texto h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em ;
+    padding: 5px;
+}
+
+.caixa-mundo .mundo-conteudo .texto p{
+    font-size: 0.9em;
+}
+
+.mundo-conteudo .img-noticia{
+    background-image: url(imagens/tecnologia.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30%;
+    padding-top: 30%;
+    margin-top: 8px;
+    order: 1;
+}
+
+.mundo-conteudo .texto{
+    width: 67%;
+    padding-left: 10px;
+    order: 2;
+    margin-top: 10px;
+}
+
+.mundo-conteudo a{
+    text-decoration: none;
+}
+
+/****/
+
+/* Coluna direita */
+
+.coluna-dir .caixa-entrevista {
+    background-image: url(imagens/fundo-caixa.png);
+    height: 42%;
+    width: 100%;
+}
+
+.coluna-dir .caixa-entrevista .entrevista-conteudo{
+    background-color: #fff;
+    width: 96%;
+    margin: 10px auto;
+}
+
+.caixa-entrevista .entrevista-conteudo h3{
+    background-color: #B10333;
+    display: inline;
+    color: #fff;
+    padding: 0 4px;
+}
+
+.entrevista-conteudo img{
+    width: 99%;
+    margin-top: 4px;
+    margin-left: 2px;
+}   
+
+.entrevista-conteudo p, .entrevista-conteudo a{
+    padding-left: 12px;
+}
+
+/****/
+
+/* Lateral */
+
+.lateral .caixa-lateral{
+    background-image: url(imagens/fundo-caixa.png);
+}
+
+.lateral .caixa-lateral .caixa-conteudo{
+    width: 96%;
+    padding: 4px;
+}
+
+.lateral .caixa-lateral .caixa-conteudo ul{
+    background-color: #fff;
+}
+
+.lateral .caixa-lateral .caixa-conteudo ul a{
+    font: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.caixa-conteudo ul a:hover{
+    background: #f9f9f9;
+    background-image: url(imagens/marcador.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    color: #a1a1a1;
+}
+
+/*****/
+
+/* News */ 
+
+.news{
+    background-image: url(imagens/fundo-caixa.png);
+    height: 17.5%;
+}
+
+.news .news-conteudo{
+    background-color: #fff;
+    width: 96%;
+    margin: 6px auto ;
+}
+
+.news .news-conteudo form label{
+    font-size: 1.3em;
+}
+
+.news .news-conteudo form input[type="text"]{
+    width: 90%;
+    height: 25px;
+    margin-top: 6px;
+    padding-left: 4px;
+}
+
+.news .news-conteudo form input[type="submit"]{
+    margin-top: 10px;
+    color: #fff;
+    background-color:#B10333;
+    width: 60%;
+    height: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+}
+
+/****/ 
+
+/* rodape */
+
+.container-rodape{
+    background: #294c71;
+    padding: 20px;
+    margin-top: 80px;
+}
+ 
+.rodape{
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width: 1118px){
+    .mapa-logo{
+        display: none;
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 850px){
+    /*Fazer menu mobile lá em cima */
+    .menu-total .menu .logo{
+        background-image: url(imagens/logo.png);
+        width: 152px;
+        height: 66px;
+        cursor: pointer;
+        float: left;
+        margin-top: 25px;
+        margin-left: 40%;
+    }
+
+    .menu ul{
+        margin-left: 12%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .menu-total .menu .logo{
+        margin-top: 45px;
+        margin-left: 2%;
+    }
+    
+    .menu ul li a {
+        display: none;
+    }
+
+    .menu-mobile {
+        background-size: 100% 100% ;
+        cursor: pointer;
+        background-image: url(imagens/icon_menu\ .png);
+        display: block;
+        float: right;
+        margin-top: -36%;
+        margin-right: 3%;
+    }
+
+    .menu-mobile ul{
+        display: none;
+        width: 100%;
+        left: 0;
+        top: 95px;
+        border-bottom:4px solid #EB2D2D;
+        z-index: 999;
+        position: absolute;
+        text-align: center;
+        background-color: #B10333;
+    }
+
+    .menu-mobile ul li:hover{
+        background-color: #de003e;
+    }
+
+    .menu-mobile:hover ul{
+        display: block;
+        margin-top: 8px;
+    }
+    
+    .menu-mobile li{
+        font-size: 23px;
+        padding: 10px 0px;
+        font-style: italic;
+    }
+    
+    .menu-mobile li a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .container{
+        width: 100%;
+        max-width: 740px;
+        margin: 0;
+    }
+
+    .conteudo-total{
+        display: block;
+    }
+
+    .coluna-dir{
+        width: 90%;
+        padding: 0;
+        margin: 25px auto;
+    }
+
+    .coluna-meio{
+        width: 90%;
+        padding: 0;
+        margin: 25px auto;
+    }
+
+    .lateral{
+        width: 90%;
+        margin: 25px auto;
+    }
+
+    
+
+    .news .news-conteudo form input[type="submit"] {
+        margin: 10px;
+        margin-left: 90px;
+        cursor: pointer;
+    }
+
+    .rodape{
+        width: 740px;
+        text-align: center;
+        margin:  0 auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
